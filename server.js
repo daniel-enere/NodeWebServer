@@ -2,11 +2,11 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const port = process.env.PORT || 5000;
 var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
-app.use(express.static(__dirname + '/public'));
 
 app.use((req, res, next) =>{
   var now = new Date().toString();
@@ -20,9 +20,11 @@ app.use((req, res, next) =>{
   next();
 });
 
-app.use((req, res, next) =>{
-  res.render("maintenance.hbs");
-});
+// app.use((req, res, next) =>{
+//   res.render("maintenance.hbs");
+// });
+
+app.use(express.static(__dirname + '/public'));
 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
@@ -54,6 +56,6 @@ app.get('/about', (req, res) =>{
 app.get('/po', (req, res) =>{
   res.send('Bad Request')
 });
-app.listen(5000, ()=>{
-  console.log('Server is up on port 5000')
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
