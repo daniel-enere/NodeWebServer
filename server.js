@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
@@ -46,6 +46,12 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) =>{
+  res.render('projects.hbs', {
+    pageTitle: "Dans Projects"
+  });
+});
+
 app.get('/about', (req, res) =>{
   res.render("about.hbs", {
     pageTitle: 'About Page',
@@ -53,9 +59,6 @@ app.get('/about', (req, res) =>{
   });
 });
 
-app.get('/po', (req, res) =>{
-  res.send('Bad Request')
-});
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
