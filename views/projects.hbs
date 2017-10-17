@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta charset="utf-8">
-    <title>Some Site </title>
-  </head>
+    <title>Projects </title>
+
+    <style>
+      body {
+        background-color: black !important;
+        color: red;
+        font-family: sans-serif;
+      }
+    .back-thick-red-border {
+      border-color: red;
+      border-width: 20px;
+      border-style: solid;
+      border-radius: 3%;
+      margin: -10px;
+    }
+    .contact-border {
+      margin: 20px 20px 20px 40px;
+    }
+    .bio-border {
+      margin: 50px;
+    }
+
+    .bio-border1a {
+      border-style: solid;
+      border-radius: 1%;
+      margin: 10px;
+    }
+    .bio-border2a {
+      border-style: solid;
+      margin: 20px 0px 0px 10px;
+    }
+    /*<!-- -->*/
+      .white-text {
+        color: white;
+        font-family: Lobster;
+      }
+      p {
+        font-size: 150px;
+      }
+      p1 {
+        font-size: 200%;
+      }
+      </style>
+    </head>
   <body>
+    <div class="container">
     {{> Header}}
-    <p>Future Projects</p>
+      <p class="text-center white-text">Projects</p>
+      <div class="row bio-border">
+        <h3 class="text-center"><strong> Todo App </strong></h3>
+        <div class="col-sm-4">
+          <a href="https://github.com/daniel-enere/Notes-node"><img class="bio-border1a" src="https://s1.postimg.org/2ambm2d8mn/rsz_screenshot_15.png" alt="Todo CMD Line App"></a>
+        </div>
+        <div class="col-sm-6 white-text bio-border2">
+          <p1> This allows for basic CRUD using the command line
+          </p1>
+      </div>
+      </div>
+      <div class="row bio-border">
+        <h3 class="text-center"><strong> Node Todo API </strong></h3>
+        <div class="col-sm-4">
+          <a href="https://github.com/daniel-enere/new-node-todo-api"><img class="bio-border1a" src="https://s1.postimg.org/2ambm2d8mn/rsz_screenshot_15.png" alt="Todo API"></a>
+        </div>
+        <div class="col-sm-6 white-text bio-border2">
+          <p1> This allows for basic CRUD using the command line
+          </p1>
+      </div>
+      </div>
+      <!-- <div class="row bio-border">
+        <h3 class="text-center"><strong> Coffee App </strong></h3>
+        <div class="col-sm-4">
+          <img class="bio-border1a" src="https://s1.postimg.org/5w02aq8ulb/coffee-app-logo.jpg" alt="Coffee Beans">
+        </div>
+        <div class="col-sm-6 white-text bio-border2">
+          <p1> Java and Javascript ES6 developer currently working in the Houston area. I have a plethora of
+            projects that I've worked littered all over my Github page. Check out my LinkedIn and Github page
+            down below.
+          </p1>
+      </div>
+      </div> -->
+      <!-- <div class="row bio-border">
+        <h3 class="text-center"><strong> Messenger App </strong></h3>
+        <div class="col-sm-4">
+          <img class="bio-border1a" src="https://s1.postimg.org/3grgxact27/messenger-logo.jpg" alt="Messenger Logo">
+        </div>
+        <div class="col-sm-6 white-text bio-border2">
+          <p1> Encrypted messenger app with no server-side logs.
+          </p1>
+      </div>
+      </div>
+      <div class="row bio-border">
+        <h3 class="text-center"><strong> Tic-Tac-Toe App </strong></h3>
+        <div class="col-sm-4">
+          <img class="bio-border1a" src="https://s1.postimg.org/58vx8jk6xr/tic-tac-toe-pic.png" alt="Tic-Tac-Toe Photo">
+        </div>
+        <div class="col-sm-6 white-text bio-border2">
+          <p1> I decided to put a spin on a classic pastime.
+          </p1>
+      </div>
+      </div> -->
 
     {{> footer}}
+  </div>
   </body>
 </html>

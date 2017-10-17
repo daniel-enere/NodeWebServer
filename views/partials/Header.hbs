@@ -1,4 +1,47 @@
-<h1>{{pageTitle}}</h1>
-<p><a href='/'> Home</a></p>
-<p><a href='/about'> About</a></p>
-<p><a href='/projects'> Project</a></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- or you can download a local copy of bootstrap.min.css -->
+  <script src="node-web-server/node_modules/jquery/src/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#homePage").on('mouseover', function() {
+      $("#homePage").addClass("animated shake");
+    });
+  });
+  </script>
+  <style>
+    .border-header {
+      background-color: black !important;
+      margin: -10px 10px -10px 10px;
+    }
+    .border-header2 {
+      background-color: black !important;
+      margin: 20px 0px 20px 0px;
+    }
+  </style>
+</head>
+<div class="text-center border-header"><h1>{{pageTitle}}</h1>
+
+<div class="row border-header2">
+  <div id="homePage" class="col-xs-4">
+    <a href='/'><button class="btn btn-block btn-info"><i class="fa fa-thumbs-up"></i> Home</button></a>
+  </div>
+  <div id="aboutPage" class="col-xs-4">
+    <a href='/about'><button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> About</button></a>
+  </div>
+  <div id="projectPage" class="col-xs-4">
+    <a href='/projects'><button class="btn btn-block btn-info"> Projects</button></a>
+  </div>
+</div>
+</div>
+</html>

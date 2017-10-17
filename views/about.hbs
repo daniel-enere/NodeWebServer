@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta charset="utf-8">
-    <title>Some Site </title>
+    <title>About </title>
+    <style>
+      body {
+        background-color: #000 !important;
+        color: blue;
+        font-family: Lobster, sans-serif;
+        maring: 10px 10px 10px 10px;
+      }
+      .white-text{
+        color: white;
+      }
+      .back-thick-red-border {
+        border-color: red;
+        border-width: 20px;
+        border-style: solid;
+        border-radius: 3%;
+        margin: -10px;
+      }
+      .contact-border {
+        margin: 20px 20px 20px 40px;
+      }
+      .bio-border {
+        margin: 50px;
+      }
+      .bio-border1 {
+        border-style: solid;
+        border-radius: 50%;
+        margin: 10px;
+      }
+      .bio-border1a {
+        border-style: solid;
+        border-radius: 1%;
+        margin: 10px;
+      }
+      .bio-border2 {
+        border-style: solid;
+        margin: 10px;
+      }
+      .bio-border2a {
+        border-style: solid;
+        margin: 20px 0px 0px 10px;
+      }
+      .bio-border3 {
+        border-style: solid;
+        border-radius: 50%;
+        margin: 10px;
+      }
+      p {
+        font-size: 200%;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
     {{> Header}}
-    <p>Tell me what you want to know</p>
+  <div class="row bio-border">
+    <h3 class="text-center"><strong> Bio </strong></h3>
+    <div class="col-sm-4">
+      <img class="bio-border1a" src="https://s1.postimg.org/402oovok33/Linked_In_Pic.jpg" alt="LinkedIn Photo">
+    </div>
+    <div class="col-sm-6 white-text bio-border2">
+      <p> Java and Javascript ES6 developer currently working in the Houston area. I have a plethora of
+        projects that I've worked littered all over my Github page. Check out my LinkedIn and Github page
+        down below.
+      </p>
+  </div>
+  </div>
+  <div class="row bio-border">
+    <h3 class="text-center"><strong> What I'm currently doing: </strong> </h3>
+    <div class="col-sm-4">
+      <img class="bio-border1" src="https://s1.postimg.org/5z09yf4jdb/FCC_logo.png" alt="FCC Logo">
+    </div>
+    <div class="col-sm-7 white-text bio-border2">
+      <p> I'm currently enrolled at Free Code Camp. This site has been amazing so far and I look forward to what's
+        in store for me. I can't wait to start breaking and fixing code!
+      </p>
+    </div>
+  </div>
+  <div class="row bio-border">
+    <div class="col-sm-7 white-text bio-border2">
+      <p> I'm taking several courses at Udacity that challenge me everyday. Right now, I am building a simple
+        coffee app that allows users to order coffee from their smart phone. I can't wait to see the finish product!
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <img class="bio-border1" src="https://s1.postimg.org/3l9emp1z9b/Udacity_logo.png" alt="Udacity Logo">
+    </div>
+  </div>
+  <div class="row bio-border">
+    <div class="col-sm-5">
+      <img class="bio-border3" src="https://s1.postimg.org/4ikxmtum5r/Udemy_logo.png" alt="Udemy Logo">
+    </div>
+    <div class="col-sm-6 white-text bio-border2a">
+      <p> Udemy has been the most time consuming out of the list here. However,
+        my coding and debugging skills have skyrocketed after taking several of their courses.
+         Almost done with the node.js course so wish me luck!
+      </p>
+    </div>
+  </div>
+
+    <div class="white-text text-center"> Contact Info</div>
+    <div class="contact-border row" id="test1">
+      <div class="col-sm-5 contact-border">
+        <a href='https://github.com/daniel-enere'><button class="btn btn-block btn-danger"> Github</button></a>
+      </div>
+      <div class="col-sm-5 contact-border">
+        <a href='https://www.linkedin.com/in/daniel-eneremadu/'><button class="btn btn-block btn-danger"> LinkedIn</button></a>
+      </div>
+    </div>
+  </div>
 
     {{> footer}}
   </body>

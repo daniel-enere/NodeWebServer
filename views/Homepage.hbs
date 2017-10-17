@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Some Site </title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Daniel</title>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- <script src="node-web-server/node_modules/jquery/src/jquery.js"></script> -->
+  <!-- <script>
+  $(document).ready(function() {
+    $("#border1").on('click', function() {
+      $("#border1").addClass("animated shake");
+    });
+  });
+  </script> -->
+  <!-- or you can download a local copy of bootstrap.min.css -->
+  <style>
+    body {
+      background-color: #000 !important;
+      color: blue;
+      background-image: url("https://s1.postimg.org/5shqatle73/universe-2742113_1920.jpg");
+      font-family: Lobster, sans-serif;
+  </style>
+</head>
+
   <body>
-    {{> Header}}
-    <p>Tell me what you want to know. For starters my name is {{screamIt name}}. During leisure activities, I am focused on{{hobbies}}</p>
+    <div>{{> Header}}</div>
 
     {{> footer}}
   </body>
