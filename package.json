@@ -11,8 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.5.2",
-    "express": "^4.14.0",
-    "hbs": "^4.0.0",
-    "jquery": "^3.2.1"
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "jquery": "^3.3.1"
   }
 }
